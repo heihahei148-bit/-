@@ -1,0 +1,32 @@
+{
+  "name": "ai-bingjian-mvp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "node backend/server.js",
+    "dev:client": "vite",
+    "build:client": "vite build",
+    "preview:client": "vite preview",
+    "init:db": "node backend/db/index.js"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.35",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "lucide-vue-next": "^0.522.0",
+    "lunar-javascript": "^1.7.5",
+    "multer": "^1.4.5-lts.1",
+    "sql.js": "^1.12.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.3.5"
+  }
+}
