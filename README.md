@@ -44,7 +44,8 @@ Users 表： 存储基础信息（id, name, created_at）。
 Reports 表： 存储记录（id, user_id, bazi_data, ai_analysis_text, created_at）。
 
 7. 后续开发建议 (Roadmap)
-阶段一： 接入真实的大模型 API，优化 Prompt 以获得更精准的《冰鉴》风格输出。
+
+ 阶段一： 接入真实的大模型 API，优化 Prompt 以获得更精准的《冰鉴》风格输出。
 
 阶段二： 开发支付集成（如 Stripe 或微信支付），实现“解锁完整报告”的商业闭环。
 
